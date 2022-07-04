@@ -1,0 +1,42 @@
+
+body{
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(
+    to left,
+    rgba(229, 215, 205, 1),
+    rgba(34, 193, 195, 1)
+  );
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid black; 
+    width: 100%;
+}
+
+.fixed_header{
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.fixed_header tbody{
+  display: block;
+  width: 100%;
+  overflow: auto;
+  height: 150px;
+}
+
+.fixed_header thead tr {
+   display: block;
+}
+
+.fixed_header thead {
+  background: black;
+  color:#fff;
+}
+
+.fixed_header th, .fixed_header td {
+  padding: 5px;
+}

@@ -1,0 +1,222 @@
+body {
+    background-image: linear-gradient(to left,
+            rgba(229, 215, 205, 1),
+            rgba(34, 193, 195, 1));
+}
+
+.image {
+    width: 30%;
+    height: auto
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+}
+
+.specification {
+    text-align: left;
+    width: 50%;
+
+    margin-left: 3rem;
+}
+
+
+#form {
+    text-align: center;
+    position: relative;
+    margin-top: 20px;
+}
+
+#form fieldset {
+    background: white;
+    border: 0 none;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 10px;
+    position: relative
+}
+
+.finish {
+    text-align: center;
+    margin-left: 5rem;
+}
+
+#form fieldset:not(:first-of-type) {
+    display: none
+}
+
+#form .previous-step,
+.next-step {
+    width: 100px;
+    font-weight: bold;
+    font-size: 12px;
+    color: white;
+    border: 0 none;
+    border-radius: 0px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px 10px 0px;
+    float: right
+}
+
+.form,
+.previous-step {
+    background: #616161;
+}
+
+.form,
+.next-step {
+    background: #2F8D46;
+    margin-right: 2rem;
+}
+
+#form .previous-step:hover,
+#form .previous-step:focus {
+    background-color: #000000
+}
+
+#form .next-step:hover,
+#form .next-step:focus {
+    background-color: #2F8D46
+}
+
+.text {
+    color: #2F8D46;
+    font-weight: normal
+}
+
+#progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    color: lightgrey
+}
+
+#progressbar .active {
+    color: #2F8D46
+}
+
+#progressbar li {
+    list-style-type: none;
+    font-size: 15px;
+    width: 20%;
+    float: left;
+    position: relative;
+    font-weight: 400
+}
+
+#progressbar #step1:before {
+    content: "1"
+}
+
+#progressbar #step2:before {
+    content: "2"
+}
+
+#progressbar #step3:before {
+    content: "3"
+}
+
+#progressbar #step4:before {
+    content: "4"
+}
+
+#progressbar #step5:before {
+    content: "5"
+}
+
+#progressbar li:before {
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    display: block;
+    font-size: 20px;
+    color: #ffffff;
+    background: lightgray;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+    padding: 2px
+}
+
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: lightgray;
+    position: absolute;
+    left: 0;
+    top: 25px;
+    z-index: -1
+}
+
+#progressbar li.active:before,
+#progressbar li.active:after {
+    background: #2F8D46
+}
+
+.progress {
+    height: 20px
+}
+
+.progress-bar {
+    background-color: #2F8D46
+}
+
+/* select datetime */
+.select-date-time {
+    padding: 2rem;
+}
+
+.confirmation {
+    margin-top: 2rem;
+    padding-top: 1rem;
+
+}
+
+.item {
+    margin-left: 4rem;
+    align-items: center;
+}
+
+.summary {
+    margin-left: 0;
+    text-align: left;
+}
+
+.detail {
+    margin-left: 15rem;
+}
+
+.selectionSummary {
+    margin-top: 5rem;
+    width: 50%;
+}
+
+@media screen and (max-width: 769px) {
+    .detail {
+        margin-left: 0;
+        margin-top: 2rem;
+    }
+
+    .image {
+        width: 50%;
+        height: auto
+    }
+
+    .specification {
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+
+    .finish {
+        text-align: center;
+        margin-left: 1rem;
+    }
+
+    .selectionSummary {
+        margin-top: 1rem;
+        margin-left: 3rem;
+    }
+}
